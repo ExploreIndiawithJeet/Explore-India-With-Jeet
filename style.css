@@ -1,29 +1,49 @@
-nav{
-    background:#0b5ed7;
-    padding:20px;
+.hero{
+
+padding:120px;
+
+text-align:center;
+
+background:#f7f7f7;
+
 }
 
-nav h2{
-    color:white;
+.hero h1{
+
+font-size:55px;
+
+color:#0b5ed7;
+
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-right:20px;
-    font-weight:bold;
-}
+.hero p{
 
-section{
-    padding:60px;
-    text-align:center;
+font-size:22px;
+
+margin:30px;
+
 }
 
 button{
-    background:#ff9800;
-    color:white;
-    border:none;
-    padding:15px 30px;
-    font-size:18px;
-    cursor:pointer;
+
+background:#ff9800;
+
+color:white;
+
+padding:18px 40px;
+
+font-size:20px;
+
+border:none;
+
+cursor:pointer;
+
+border-radius:8px;
+
+}
+
+button:hover{
+
+background:#e68900;
+
 }
