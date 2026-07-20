@@ -1,7 +1,7 @@
 .hero {
     background-image: linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
     ), url("Taj-Mahal.jpg");
 
     height: 100vh;
@@ -13,32 +13,24 @@
     text-align: center;
 }
 
-.hero h1{
-    font-size:60px;
-    margin-bottom:20px;
+.hero-content h1 {
+    color: white;
+    font-size: 50px;
 }
 
-.hero p{
-    font-size:24px;
-    margin-bottom:30px;
+.hero-content p {
+    color: white;
+    font-size: 20px;
 }
 
-button{
-
-background:#ff9800;
-
-color:white;
-
-padding:18px 40px;
-
-font-size:20px;
-
-border:none;
-
-cursor:pointer;
-
-border-radius:8px;
-
+.btn {
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:#d4a017;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
 }
 
 button:hover{
