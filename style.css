@@ -1,27 +1,28 @@
 .hero{
+    background-image: url("taj-mahal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-padding:120px;
+    height:100vh;
 
-text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 
-background:#f7f7f7;
-
+    color:white;
+    text-align:center;
 }
 
 .hero h1{
-
-font-size:55px;
-
-color:#0b5ed7;
-
+    font-size:60px;
+    margin-bottom:20px;
 }
 
 .hero p{
-
-font-size:22px;
-
-margin:30px;
-
+    font-size:24px;
+    margin-bottom:30px;
 }
 
 button{
