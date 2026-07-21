@@ -409,3 +409,119 @@ font-size:34px;
 }
 
 }
+/* ================================
+   FEATURED INDIA TOURS
+================================ */
+
+.featured-tours {
+    padding: 95px 7%;
+    background: #ffffff;
+    color: #24323d;
+}
+
+.tour-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.tour-card {
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #eadfce;
+    box-shadow: 0 12px 35px rgba(16, 42, 67, 0.09);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.tour-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(16, 42, 67, 0.16);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tour-card:hover img {
+    transform: scale(1.06);
+}
+
+.tour-content {
+    padding: 28px 26px 30px;
+}
+
+.tour-content h3 {
+    margin-bottom: 12px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+
+    color: #102a43;
+}
+
+.tour-content p {
+    min-height: 76px;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.75;
+
+    color: #66727c;
+}
+
+.tour-content a {
+    display: inline-block;
+    padding-bottom: 4px;
+
+    color: #b47c20;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    border-bottom: 1px solid #b47c20;
+    transition: 0.3s;
+}
+
+.tour-content a:hover {
+    color: #102a43;
+    border-color: #102a43;
+}
+
+@media screen and (max-width: 950px) {
+
+    .featured-tours {
+        padding: 80px 6%;
+    }
+
+    .tour-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .featured-tours {
+        padding: 65px 6%;
+    }
+
+    .tour-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .tour-card img {
+        height: 230px;
+    }
+
+    .tour-content p {
+        min-height: auto;
+    }
+}
