@@ -8,6 +8,7 @@
 /* Body */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
 /* Navbar */
@@ -66,6 +67,7 @@ body {
 .hero-content {
     max-width: 800px;
     padding: 20px;
+    margin-top: 60px;
 }
 
 .hero-content h1 {
