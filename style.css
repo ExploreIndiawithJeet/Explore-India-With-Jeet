@@ -1,130 +1,296 @@
-/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+
+html {
+    scroll-behavior: smooth;
 }
 
-/* Navbar */
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
+
+
+/* Navigation Bar */
+
 .navbar {
+    width: 100%;
+    min-height: 85px;
+    padding: 15px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 25px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    z-index: 10;
+
+    background: rgba(10, 25, 40, 0.35);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+
 .logo {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
 }
+
+
+.logo span {
+    display: block;
+    margin-top: 4px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    color: #e3c16f;
+}
+
 
 .nav-links {
     display: flex;
+    align-items: center;
+    gap: 28px;
+
     list-style: none;
-    gap: 30px;
 }
+
 
 .nav-links a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
+
+    font-size: 14px;
+    font-weight: 500;
+
     transition: 0.3s;
 }
+
 
 .nav-links a:hover {
-    color: #d4af37;
+    color: #e3c16f;
 }
 
-/* Hero Section */
-.hero {
-    background-image: linear-gradient(
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.35)
-    ), url("Taj-Mahal.jpg");
 
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+.nav-button {
+    padding: 11px 20px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+    background: #c89536;
+    color: #ffffff;
 
-.hero-content {
-    max-width: 800px;
-    padding: 20px;
-    margin-top: 60px;
-}
-
-.hero-content h1 {
-    color: white;
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    color: white;
-    font-size: 22px;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-/* Hero Button */
-.hero-btn {
-    display: inline-block;
-    padding: 14px 35px;
-    background: #d4af37;
-    color: white;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
     border-radius: 30px;
-    font-size: 18px;
-    font-weight: bold;
     transition: 0.3s;
 }
 
-.hero-btn:hover {
-    background: #b8860b;
+
+.nav-button:hover {
+    background: #a97522;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
 
-    .navbar {
-        flex-direction: column;
-        padding: 20px;
-    }
+/* Hero Section */
+
+.hero {
+    min-height: 100vh;
+    padding: 140px 7% 80px;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(8, 22, 35, 0.82),
+            rgba(8, 22, 35, 0.48),
+            rgba(8, 22, 35, 0.28)
+        ),
+        url("Taj-Mahal.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.hero-content {
+    max-width: 760px;
+}
+
+
+.hero-small-text {
+    margin-bottom: 18px;
+
+    color: #e3c16f;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+
+.hero h1 {
+    max-width: 750px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 64px;
+    line-height: 1.12;
+
+    color: #ffffff;
+
+    text-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.hero-description {
+    max-width: 650px;
+    margin-top: 24px;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #f4f4f4;
+}
+
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin-top: 32px;
+}
+
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 14px 28px;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+
+.primary-button {
+    background: #c89536;
+    color: #ffffff;
+    border: 2px solid #c89536;
+}
+
+
+.primary-button:hover {
+    background: #a97522;
+    border-color: #a97522;
+}
+
+
+.secondary-button {
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+
+.secondary-button:hover {
+    background: #ffffff;
+    color: #102a43;
+}
+
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 950px) {
 
     .nav-links {
-        margin-top: 15px;
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none;
     }
 
-    .hero-content h1 {
-        font-size: 38px;
+    .navbar {
+        padding: 14px 5%;
     }
 
-    .hero-content p {
-        font-size: 18px;
+    .hero {
+        padding: 140px 6% 70px;
+        background-position: 60% center;
     }
 
-    .hero-btn {
-        padding: 12px 28px;
-        font-size: 16px;
+    .hero h1 {
+        font-size: 48px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .logo span {
+        font-size: 9px;
+    }
+
+    .nav-button {
+        padding: 9px 13px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 100vh;
+        padding: 130px 6% 60px;
+
+        background-image:
+            linear-gradient(
+                rgba(8, 22, 35, 0.72),
+                rgba(8, 22, 35, 0.62)
+            ),
+            url("Taj-Mahal.jpg");
+    }
+
+    .hero-small-text {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .primary-button,
+    .secondary-button {
+        min-width: 170px;
+        text-align: center;
     }
 }
