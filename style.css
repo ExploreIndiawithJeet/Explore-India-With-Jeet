@@ -24,7 +24,7 @@ body {
 .navbar {
     width: 100%;
     min-height: 85px;
-    padding: 15px 6%;
+    padding: 12px 6%;
 
     display: flex;
     align-items: center;
@@ -35,6 +35,7 @@ body {
     top: 0;
     left: 0;
     z-index: 10;
+    transition: all 0.4s ease;
 
     background: rgba(10, 25, 40, 0.35);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -79,14 +80,27 @@ body {
     font-size: 14px;
     font-weight: 500;
 
-    transition: 0.3s;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 
 .nav-links a:hover {
-    color: #e3c16f;
+    color: #d19a2d;
+    transform: translateY(-2px);
+}
+.nav-links a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-top: 4px;
+    background: #d19a2d;
+    transition: width 0.3s ease;
 }
 
+.nav-links a:hover::after {
+    width: 100%;
+}
 
 .nav-button {
     padding: 11px 20px;
@@ -1219,4 +1233,42 @@ bottom:18px;
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+/* ==========================
+   Glass Navbar on Scroll
+========================== */
+
+.navbar.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    animation: navbarSlide 0.4s ease;
+}
+
+@keyframes navbarSlide {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+/* Navbar text color after scroll */
+
+.navbar.scrolled .logo,
+.navbar.scrolled .nav-links a {
+    color: #10263d;
+}
+
+.navbar.scrolled .nav-button {
+    color: #ffffff;
+}
+
+.navbar.scrolled .nav-links a::after {
+    background: #d19a2d;
 }

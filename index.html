@@ -11,10 +11,10 @@
 
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
 
         <div class="logo">
-            Explore India with Jeet ❤️
+            Explore India with Jeet
         </div>
 
         <ul class="nav-links">
@@ -406,13 +406,22 @@
 
         <div class="contact-form-wrapper">
 
-            <form class="contact-form">
+            <form
+    class="contact-form"
+    action="https://formsubmit.co/mr.jitendranegi@gmail.com"
+    method="POST"
+    >
+><input type="hidden" name="_subject" value="New India Tour Inquiry">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_autoresponse" value="Thank you for contacting Explore India with Jeet. Your travel inquiry has been received, and we will reply within 24 hours.">
+<input type="hidden" name="_next" value="https://exploreindiawithjeet.github.io/Explore-India-With-Jeet/thankyou.html">
 
                 <div class="form-row">
 
                     <div class="form-group">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        <input type="text" id="name" name="Full Name" placeholder="John Smith" required>
                     </div>
 
                     <div class="form-group">
@@ -426,12 +435,12 @@
 
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                        <input type="email" id="email" name="email Address" placeholder="Your email address" required>
                     </div>
 
                     <div class="form-group">
                         <label for="whatsapp">WhatsApp Number</label>
-                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="Include country code">
+                        <input type="tel" id="whatsapp" name="whatsApp Number" placeholder="Include country code">
                     </div>
 
                 </div>
@@ -440,12 +449,13 @@
 
                     <div class="form-group">
                         <label for="travel-month">Travel Month</label>
-                        <input type="month" id="travel-month" name="travel-month">
+                        <input type="month" id="travel-month" name="travel month">
                     </div>
 
                     <div class="form-group">
                         <label for="travellers">Number of Travellers</label>
-                        <input type="number" id="travellers" name="travellers" min="1" placeholder="Example: 2">
+                        <input type="number" id="travellers" name="Number of Travellers" placeholder="Example: 2" min="1" required
+>
                     </div>
 
                 </div>
@@ -457,8 +467,8 @@
 
                     <input
                         type="text"
-                        id="destinations-interest"
-                        name="destinations-interest"
+                        id="destinations"
+                        name="destinations or experiences"
                         placeholder="Example: Rajasthan, Kerala, wildlife, culture"
                     >
                 </div>
@@ -466,7 +476,7 @@
                 <div class="form-group">
                     <label for="budget">Estimated Budget</label>
 
-                    <select id="budget" name="budget">
+                    <select id="budget" name="Estimated budget">
                         <option value="">Select your estimated budget</option>
                         <option value="under-2000">Under USD 2,000 per person</option>
                         <option value="2000-4000">USD 2,000–4,000 per person</option>
@@ -480,7 +490,7 @@
 
                     <textarea
                         id="message"
-                        name="message"
+                        name="Trip details"
                         rows="5"
                         placeholder="Share your preferred destinations, travel dates and special requirements"
                     ></textarea>

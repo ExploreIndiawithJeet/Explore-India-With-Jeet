@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | Explore India with Jeet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            font-family: "Poppins", sans-serif;
+            color: #10263d;
+            background:
+                linear-gradient(rgba(9, 29, 47, 0.72), rgba(9, 29, 47, 0.78)),
+                url("Taj-Mahal.jpg") center/cover no-repeat;
+        }
+
+        .thank-you-card {
+            width: 100%;
+            max-width: 720px;
+            padding: 60px 45px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.28);
+            animation: cardEntry 0.8s ease;
+        }
+
+        .success-icon {
+            width: 82px;
+            height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            background: #d19a2d;
+            color: #ffffff;
+            font-size: 40px;
+            box-shadow: 0 12px 30px rgba(209, 154, 45, 0.35);
+        }
+
+        .small-heading {
+            margin-bottom: 12px;
+            color: #d19a2d;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin-bottom: 18px;
+            font-family: "Playfair Display", serif;
+            font-size: clamp(38px, 6vw, 58px);
+            line-height: 1.1;
+            color: #10263d;
+        }
+
+        .message {
+            max-width: 570px;
+            margin: 0 auto 16px;
+            color: #536273;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .response-note {
+            margin-bottom: 34px;
+            color: #10263d;
+            font-weight: 600;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            min-width: 190px;
+            padding: 14px 24px;
+            border: 2px solid #d19a2d;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .home-button {
+            background: #d19a2d;
+            color: #ffffff;
+        }
+
+        .home-button:hover {
+            background: #b7811d;
+            border-color: #b7811d;
+            transform: translateY(-3px);
+        }
+
+        .whatsapp-button {
+            background: transparent;
+            color: #10263d;
+        }
+
+        .whatsapp-button:hover {
+            background: #10263d;
+            border-color: #10263d;
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        .brand {
+            margin-top: 38px;
+            padding-top: 24px;
+            border-top: 1px solid #e1e5e9;
+            font-family: "Playfair Display", serif;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        @keyframes cardEntry {
+            from {
+                opacity: 0;
+                transform: translateY(35px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+
+            .thank-you-card {
+                padding: 45px 22px;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="thank-you-card">
+
+        <div class="success-icon">✓</div>
+
+        <p class="small-heading">Inquiry Received</p>
+
+        <h1>Thank You for Your Inquiry</h1>
+
+        <p class="message">
+            Your India travel request has been received successfully.
+            I will review your travel preferences and contact you with personalised recommendations.
+        </p>
+
+        <p class="response-note">
+            You can normally expect a response within 24 hours.
+        </p>
+
+        <div class="button-group">
+
+            <a href="index.html" class="button home-button">
+                Back to Homepage
+            </a>
+
+            <a
+                href="https://wa.me/917976288089"
+                class="button whatsapp-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Chat on WhatsApp
+            </a>
+
+        </div>
+
+        <div class="brand">
+            Explore India with Jeet
+        </div>
+
+    </main>
+
+</body>
+</html>
